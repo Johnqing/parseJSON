@@ -2,13 +2,13 @@
   window.JSON = window.JSON || {};
 	// JSON RegExp
 	var rvalidchars = /^[\],:{}\s]*$/,
-		rvalidbraces = /(?:^|:|,)(?:\s*\[)+/g,
-		rvalidescape = /\\(?:["\\\/bfnrt]|u[\da-fA-F]{4})/g,
-		rvalidtokens = /"[^"\\\r\n]*"|true|false|null|-?(?:\d+\.|)\d+(?:[eE][+-]?\d+|)/g,
-		Apply = Object.prototype.toString.apply,
-		trim = function(str){
-			return str.replace(/(^\s*)|(\s*$)/g, "");
-		}
+	    rvalidbraces = /(?:^|:|,)(?:\s*\[)+/g,
+	    rvalidescape = /\\(?:["\\\/bfnrt]|u[\da-fA-F]{4})/g,
+	    rvalidtokens = /"[^"\\\r\n]*"|true|false|null|-?(?:\d+\.|)\d+(?:[eE][+-]?\d+|)/g,
+	    Apply = Object.prototype.toString.apply,
+	    trim = function(str){
+		return str.replace(/(^\s*)|(\s*$)/g, "");
+	    }
 	/**
 	 * 字符串解析为JSON
 	 * @param {String} data sJSON字符串
